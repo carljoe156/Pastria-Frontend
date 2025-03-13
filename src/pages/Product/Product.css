@@ -1,0 +1,35 @@
+.product-list {
+  padding: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+}
+
+.view-details-link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.product-detail {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-image {
+  width: 300px;
+  height: auto;
+}
