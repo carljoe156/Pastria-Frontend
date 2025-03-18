@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import "./Nav.css";
 
-const Nav = () => {
+const Nav = ({ user, handleLogOut }) => {
   return (
     <nav className="navbar">
       <div className="logo">
@@ -28,6 +28,18 @@ const Nav = () => {
           <Link to="/contact" className="link">
             Contact
           </Link>
+        </li>
+        <li>
+          <Link to="/cart" className="link">
+            Cart
+          </Link>
+        </li>
+        <li>
+          {user ? (
+            <button onClick={handleLogOut}>Logout</button>
+          ) : (
+            <Link to="/authentication">Login</Link>
+          )}
         </li>
       </ul>
     </nav>
