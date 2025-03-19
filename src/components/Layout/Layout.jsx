@@ -3,10 +3,10 @@ import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import "./Layout.css";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, handleLogOut }) => {
   return (
     <div className="layout-container">
-      <Nav />
+      <Nav handleLogOut={handleLogOut} />
       <main className="main-content">{children}</main>
       <Footer />
     </div>
