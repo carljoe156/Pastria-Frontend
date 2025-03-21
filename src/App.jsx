@@ -5,7 +5,9 @@ import Product from "./pages/Product/Product";
 import HomePage from "./pages/HomePage/HomePage";
 import Layout from "./components/Layout/Layout";
 import AuthPage from "./pages/AuthPage/AuthPage";
+import Cart from "./pages/Cart/Cart";
 import { getUser, logOut } from "./utilities/users-services.js";
+import { useCart } from "./utilities/cart-services.js";
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -18,13 +20,45 @@ function App() {
     logOut();
     setUser(null);
   }
+  const {
+    cart,
+    fetchCart,
+    loading,
+    addToCart,
+    removeItem,
+    updateQuantity,
+    deleteCart,
+  } = useCart(user?._id);
+
+  useEffect(() => {
+    if (user) {
+      fetchCart();
+    }
+  }, [user]);
 
   return (
     <>
       <Layout handleLogOut={handleLogOut} user={user}>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/"
+            element={<HomePage addToCart={addToCart} user={user} />}
+          />
           <Route path="/product/:id" element={<Product />} />
+          <Route
+            path="/cart"
+            element={
+              <Cart
+                userId={user?._id}
+                cart={cart}
+                removeItem={removeItem}
+                updateQuantity={updateQuantity}
+                fetchCart={fetchCart}
+                loading={loading}
+                deleteCart={deleteCart}
+              />
+            }
+          />
           <Route
             path="/authentication"
             element={<AuthPage setUser={setUser} />}
