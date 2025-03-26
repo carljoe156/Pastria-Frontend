@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import Layout from "./components/Layout/Layout";
 import AuthPage from "./pages/AuthPage/AuthPage";
 import Cart from "./pages/Cart/Cart";
+import Checkout from "./pages/Checkout/Checkout.jsx";
 import { getUser, logOut } from "./utilities/users-services.js";
 import { useCart } from "./utilities/cart-services.js";
 
@@ -59,6 +60,7 @@ function App() {
               />
             }
           />
+          <Route path="/checkout" element={<Checkout user={user} />} />
           <Route
             path="/authentication"
             element={<AuthPage setUser={setUser} />}
