@@ -1,12 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
-// import { Link } from "react-router";
 import axios from "axios";
 import ProductGrid from "../../components/ProductGrid/ProductGrid";
 import Welcome from "../../components/Welcome/Welcome";
 import "./HomePage.css";
 
-const HomePage = () => {
+const HomePage = ({ addToCart, user }) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -43,7 +42,7 @@ const HomePage = () => {
   return (
     <div>
       <Welcome />
-      <ProductGrid products={products} />
+      <ProductGrid products={products} addToCart={addToCart} user={user} />
     </div>
   );
 };
