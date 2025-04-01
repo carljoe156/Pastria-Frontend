@@ -5,6 +5,7 @@ import Product from "./pages/Product/Product";
 import HomePage from "./pages/HomePage/HomePage";
 import Layout from "./components/Layout/Layout";
 import AuthPage from "./pages/AuthPage/AuthPage";
+// import About from "./pages/About/About";
 import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout.jsx";
 import { getUser, logOut } from "./utilities/users-services.js";
@@ -65,6 +66,7 @@ function App() {
             path="/authentication"
             element={<AuthPage setUser={setUser} />}
           />
+          {/* <Route path="/aboutus" element={<About setUser={setUser} />} /> */}
         </Routes>
       </Layout>
     </>
