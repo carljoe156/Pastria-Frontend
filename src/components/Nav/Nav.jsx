@@ -20,12 +20,12 @@ const Nav = ({ user, handleLogOut }) => {
           </Link>
         </li>
         <li>
-          <Link to="/about" className="link">
+          <Link to="/About" className="link">
             About Us
           </Link>
         </li>
         <li>
-          <Link to="/contact" className="link">
+          <Link to="/Contact" className="link">
             Contact
           </Link>
         </li>
