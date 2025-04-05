@@ -28,7 +28,7 @@ const Product = () => {
   }, [id]);
 
   if (loading) {
-    return <div>Loading product details...</div>;
+    return <div>Loading product ...</div>;
   }
 
   if (error) {
