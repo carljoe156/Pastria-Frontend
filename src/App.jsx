@@ -10,6 +10,7 @@ import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout.jsx";
 import { getUser, logOut } from "./utilities/users-services.js";
 import { useCart } from "./utilities/cart-services.js";
+import ProductDetails from "./pages/ProductDetails/ProductDetails.jsx";
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -46,7 +47,7 @@ function App() {
             path="/"
             element={<HomePage addToCart={addToCart} user={user} />}
           />
-          <Route path="/product/:id" element={<Product />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
           <Route
             path="/cart"
             element={
