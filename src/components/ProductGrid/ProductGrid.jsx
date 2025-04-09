@@ -7,7 +7,7 @@ const ProductGrid = ({ products, addToCart, user }) => {
     <div className="product-grid">
       {Array.isArray(products) && products.length > 0 ? (
         products.map((product) => (
-          <div key={product.id} className="product-card">
+          <div key={product._id} className="product-card">
             <img
               src={product.imageUrl || "/default-image.jpg"}
               alt={product.name}
