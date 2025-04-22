@@ -23,26 +23,25 @@ const HomePage = ({ addToCart, user }) => {
       });
   }, []);
 
-  if (loading) {
-    return (
-      <div className="loading">
-        <p>Loading products...</p>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="error">
-        <p>{error}</p>
-      </div>
-    );
-  }
-
   return (
     <div>
       <Welcome />
-      <ProductGrid products={products} addToCart={addToCart} user={user} />
+
+      {loading && (
+        <div className="loading">
+          <p>Loading products...</p>
+        </div>
+      )}
+
+      {error && (
+        <div className="error">
+          <p>{error}</p>
+        </div>
+      )}
+
+      {!loading && !error && (
+        <ProductGrid products={products} addToCart={addToCart} user={user} />
+      )}
     </div>
   );
 };
