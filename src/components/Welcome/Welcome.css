@@ -1,9 +1,52 @@
-h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+.welcome-hero {
+  position: relative;
+  width: 100%;
+  height: 66vh;
+  overflow: hidden;
+  border-radius: 50px;
 }
 
-p {
-  font-size: 1.1rem;
-  color: #555;
+.welcome-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  color: white;
+  padding: 1rem 2rem;
+  background-color: rgba(47, 43, 43, 0.4);
+  border-radius: 5px;
+}
+
+.welcome-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fdd7b0;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #fdd7b0;
+}
+
+.cta-button {
+  background-color: #d17d58;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #b66540;
 }
