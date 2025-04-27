@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
-import "./ProductGrid";
-
+import "./ProductGrid.css";
 const ProductGrid = ({ products, addToCart, user }) => {
   return (
     <div className="product-grid">
