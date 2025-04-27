@@ -5,6 +5,7 @@ import Product from "./pages/Product/Product";
 import HomePage from "./pages/HomePage/HomePage";
 import Layout from "./components/Layout/Layout";
 import AuthPage from "./pages/AuthPage/AuthPage";
+import Shop from "./pages/Shop/Shop";
 import About from "./pages/About/About";
 import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout.jsx";
@@ -47,6 +48,11 @@ function App() {
             path="/"
             element={<HomePage addToCart={addToCart} user={user} />}
           />
+          <Route
+            path="/shop"
+            element={<Shop addToCart={addToCart} user={user} />}
+          />
+
           <Route path="/product/:id" element={<ProductDetails />} />
           <Route
             path="/cart"
