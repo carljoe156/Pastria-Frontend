@@ -1,0 +1,39 @@
+.merch-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.merch-card {
+  flex: 1 1 240px;
+  max-width: 300px;
+  border: 1px solid #f0e6dc;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff8f4;
+  box-sizing: border-box;
+}
+
+.merch-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.merch-info h3 {
+  margin: 0.5rem 0;
+}
+
+.merch-button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f9d5bb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
