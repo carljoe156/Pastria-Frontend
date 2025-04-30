@@ -1,3 +1,11 @@
+.products-section {
+  font-family: "Bagel Fat One", system-ui;
+  font-size: 25px;
+  font-weight: 200;
+  color: #d2691e;
+}
+
+/* For our Product Grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -6,6 +14,10 @@
 }
 
 .product-card {
+  font-family: "Bagel Fat One", system-ui;
+  font-size: 25px;
+  font-weight: 200;
+  color: #996558;
   border: 1px solid #ccc;
   padding: 16px;
   text-align: center;
@@ -17,15 +29,95 @@
 }
 
 .product-info h3 {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 600;
   font-size: 1.2rem;
+  color: #c97b5b;
   margin: 10px 0;
 }
 
 .product-link {
-  color: #007bff;
+  color: #c97b5b;
   text-decoration: none;
 }
 
 .product-link:hover {
   text-decoration: underline;
+}
+
+.section-title-testimonials {
+  font-family: "Bagel Fat One", system-ui;
+  color: #d2691e;
+}
+/* For our  Testimonials */
+.testimonials-section {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff3ec;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+}
+
+.testimonial-cards {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 300px;
+  font-style: italic;
+  position: relative;
+}
+
+.testimonial-card span {
+  display: block;
+  margin-top: 1rem;
+  text-align: right;
+  font-weight: bold;
+  color: #c97b5b;
+}
+
+/* For our Newsletter */
+.newsletter-section {
+  font-family: "Bagel Fat One", system-ui;
+  color: #d2691e;
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #fceee9;
+}
+
+.newsletter-form {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  min-width: 250px;
+}
+
+.newsletter-form button {
+  font-family: "Bagel Fat One", system-ui;
+  padding: 0.75rem 1.5rem;
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.newsletter-form button:hover {
+  background-color: #e76f51;
 }
