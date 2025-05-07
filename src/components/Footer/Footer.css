@@ -1,56 +1,66 @@
 .footer {
-  background: linear-gradient(to right, #f1f5f9, #cce4f7, #f1f5f9);
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  font-family: "Bagel Fat One", system-ui;
+  background-color: #996558;
+  color: #333;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .footer-container {
-  max-width: 1200px;
-  padding: 20px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-size: 0.875rem;
-  color: #4b5563;
+  width: 90%;
+  max-width: 1200px;
+  flex-wrap: wrap;
 }
 
-.footer-left p {
-  margin: 0;
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
 }
 
-.footer-center {
-  text-align: center;
+.footer-section h4 {
+  margin-bottom: 10px;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 8px;
+.footer-links {
+  list-style: none;
+  padding: 0;
 }
 
-.social-link {
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
   text-decoration: none;
-  color: inherit;
+  color: #333;
+  transition: color 0.2s;
 }
 
-.social-link:hover {
-  text-decoration: underline;
+.footer-links a:hover {
+  color: #d48f7e;
 }
 
-.footer-right {
-  display: flex;
-  gap: 16px;
-}
+/* Our media queries */
+@media (max-width: 768px) {
+  .footer {
+    height: auto;
+    padding: 40px 20px;
+  }
 
-.footer-link {
-  text-decoration: none;
-  color: inherit;
-}
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-.footer-link:hover {
-  text-decoration: underline;
+  .footer-section {
+    margin-bottom: 20px;
+  }
 }

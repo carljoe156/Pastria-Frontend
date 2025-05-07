@@ -5,56 +5,69 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Our Left Section */}
-        <div className="footer-left">
+        {/* Left: Our Company Info */}
+        <div className="footer-section">
+          <h4>About Pastria</h4>
           <p>
-            &copy; {new Date().getFullYear()} Pastria, A ServeSpoon Company. All
-            rights reserved.
+            Pastria is a modern bakery platform by ServeSpoon. We bring
+            handcrafted delights to your door with innovation and heart.
+          </p>
+          <p>
+            &copy; {new Date().getFullYear()} Pastria, A ServeSpoon Company.
           </p>
         </div>
 
-        {/* Our Center Section */}
-        <div className="footer-center">
-          <p>Follow me on:</p>
-          <div className="social-links">
-            <a
-              href="https://github.com/carljoe156"
-              className="social-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>
-            <a
-              href="https://linkedin.com/in/carljoseph156"
-              className="social-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://linkedin.com/in/carljoseph156"
-              className="social-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Personal Website
-            </a>
-          </div>
+        {/* Center: Our Social Media */}
+        <div className="footer-section">
+          <h4>Follow Us</h4>
+          <ul className="footer-links">
+            <li>
+              <a
+                href="https://github.com/carljoe156"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/carljoseph156"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/carljoseph156"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Personal Website
+              </a>
+            </li>
+          </ul>
         </div>
 
-        {/* Our Right Section */}
-        <div className="footer-right">
-          <a href="/guestbook" className="footer-link">
-            GuestBook
-          </a>
-          <a href="/privacy" className="footer-link">
-            Privacy Policy
-          </a>
-          <a href="/terms" className="footer-link">
-            Terms of Service
-          </a>
+        {/* Right: Our Site Links */}
+        <div className="footer-section">
+          <h4>Useful Links</h4>
+          <ul className="footer-links">
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+            <li>
+              <a href="/privacy">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/terms">Terms of Service</a>
+            </li>
+            <li>
+              <a href="/guestbook">GuestBook</a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
