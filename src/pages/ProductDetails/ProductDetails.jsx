@@ -35,16 +35,18 @@ const ProductDetails = () => {
       <button onClick={() => navigate(-1)} className="back-button">
         ⬅ Back
       </button>
-      <h2>{product.name}</h2>
       <img
         src={product.imageUrl}
         alt={product.name}
         className="product-image"
       />
-      <p>{product.description}</p>
-      <p>
-        <strong>Price:</strong> ${product.price}
-      </p>
+      <div className="product-content">
+        <h2>{product.name}</h2>
+        <p>{product.description}</p>
+        <p>
+          <strong>Price:</strong> ${product.price}
+        </p>
+      </div>
     </div>
   );
 };
