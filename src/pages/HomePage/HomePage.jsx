@@ -69,6 +69,30 @@ const HomePage = ({ addToCart, user }) => {
             </p>
             <span>- Lily, Queens</span>
           </div>
+          <div className="testimonial-card">
+            <p>
+              "Absolutely divine. I’ve never tasted anything so fresh and
+              flaky!"
+            </p>
+            <span>- Marcus, Manhattan</span>
+          </div>
+          <div className="testimonial-card">
+            <p>"This place turned me into a pastry snob—in the best way!"</p>
+            <span>- Jen, Jersey City</span>
+          </div>
+          <div className="testimonial-card">
+            <p>
+              "Their seasonal specials are always a delight. Never disappoints."
+            </p>
+            <span>- Ravi, Hoboken</span>
+          </div>
+          <div className="testimonial-card">
+            <p>
+              "A little slice of Paris right here in the city. Can't get
+              enough."
+            </p>
+            <span>- Clara, Bronx</span>
+          </div>
         </div>
       </section>
 
