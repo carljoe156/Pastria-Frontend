@@ -12,6 +12,7 @@ import Checkout from "./pages/Checkout/Checkout.jsx";
 import { getUser, logOut } from "./utilities/users-services.js";
 import { useCart } from "./utilities/cart-services.js";
 import ProductDetails from "./pages/ProductDetails/ProductDetails.jsx";
+import MerchDetails from "./pages/MerchDetails/MerchDetails.jsx";
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -54,6 +55,7 @@ function App() {
           />
 
           <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/merch/:id" element={<MerchDetails />} />
           <Route
             path="/cart"
             element={
