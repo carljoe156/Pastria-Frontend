@@ -103,3 +103,62 @@
 .icon-button svg {
   vertical-align: middle;
 }
+
+/* For our Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+  }
+
+  .navbar ul {
+    gap: 15px;
+  }
+
+  .logo-img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+  }
+}
+
+/*  For our Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .logo-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links li {
+    padding: 5px 10px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
